@@ -1,0 +1,25 @@
+{
+    "name": "chrisatomix/handlebars-l4",
+    "type": "library",
+    "description": "A Handlebars.php wrapper for Laravel 4",
+    "keywords": ["laravel", "laravel 4", "handlebars", "php"],
+    "homepage": "https://github.com/chrisatomix/handlebars-l4",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Chris Rossi",
+            "homepage": "http://www.atomix.com.au"
+        }
+    ],
+    "require": {
+        "php": ">=5.3.0",
+        "illuminate/support": "~4",
+        "xamin/handlebars.php": "dev-master"
+    },
+    "autoload": {
+        "psr-0": {
+            "ChrisAtomix\\HandlebarsL4": "src/"
+        }
+    },
+    "minimum-stability": "dev"
+}
