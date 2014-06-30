@@ -3,10 +3,13 @@
 return array(
 
 	// The class prefix for compiled templates.
-	'template_class_prefix' => '__Handlebars_',
+	//'template_class_prefix' => '__Handlebars_',
 
 	// A cache directory for compiled templates. Handlebars will not cache templates unless this is set.
-    'cache' => storage_path() . '/cache/views/handlebars',
+    //'cache' => storage_path() . '/cache/views/handlebars',
+
+    // A cache directory for compiled templates. Handlebars will not cache templates unless this is set.
+    //'loader' => App::make('ChrisAtomix\HandlebarsL4\FilesystemLoader'),
 
     // Override default permissions for cache files. Defaults to using the system-defined umask.
     // It is strongly recommended that you configure your umask properly rather than overriding permissions here.
@@ -14,7 +17,7 @@ return array(
 
     // A Handlebars loader instance for partials. If none is specified, defaults to an ArrayLoader for the supplied
     // partials option, if present, and falls back to the specified template loader.
-    'partials_loader' => App::make('ChrisAtomix\HandlebarsL4\FilesystemLoader'),
+    //'partials_loader' => App::make('ChrisAtomix\HandlebarsL4\FilesystemLoader', array('prefix'=>'_')),
 
     // An array of Handlebars partials. Useful for quick-and-dirty string template loading,
     // but not as efficient or lazy as a Filesystem (or database) loader.

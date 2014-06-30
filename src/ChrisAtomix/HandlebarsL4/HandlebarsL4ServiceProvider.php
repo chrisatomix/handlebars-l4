@@ -33,7 +33,8 @@ class HandlebarsL4ServiceProvider extends ServiceProvider {
 
 		$app->extend('view', function($env, $app)
 		{
-			$env->addExtension('handlebars', 'handlebars');
+			// Set files as *.hbs.php
+			$env->addExtension('hbs.php', 'handlebars');
 			return $env;
 		});
 	}

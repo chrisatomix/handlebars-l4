@@ -1,7 +1,7 @@
 <?php
 namespace ChrisAtomix\HandlebarsL4;
 
-use Handlebars_Loader;
+use Handlebars\Loader as Handlebars_loader;
 use Illuminate\Filesystem\Filesystem;
 
 class FilesystemLoader implements Handlebars_loader {
@@ -20,7 +20,7 @@ class FilesystemLoader implements Handlebars_loader {
 		if (!isset($this->templates[$name])) {
 			$this->templates[$name] = $this->loadFile($name);
 		}
-        return $this->templates[$name];
+    return $this->templates[$name];
 	}
 
 	public function loadFile($name)
